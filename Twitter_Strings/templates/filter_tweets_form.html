@@ -1,0 +1,15 @@
+{% extends "header.html" %}
+
+{% block content %}
+
+    <form method="POST" action='/next_match/'>
+        {{ form.hidden_tag() }}
+        <p>{{ form.pattern.label }} {{ form.pattern(size=50) }} {% for error in form.pattern.errors %}[{{ error }}]{% endfor %}</p>
+        <p>{{ form.follow.label }} {{ form.follow(size=50) }}</p>
+        <p>{{ form.track.label }} {{ form.track(size=50) }}</p>
+        <p>{{ form.language.label }} {{ form.language(size=3) }}</p>
+        {# <p>{{ form.locations.label }} {{ form.locations(size=50) }}</p> #}
+        {{ form.submit }}
+    </form>
+
+{% endblock %}
