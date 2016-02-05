@@ -1,6 +1,7 @@
 Note:
-To run this for yourself, enter your twitter credentials in the file:
-TwitterStrings_stream.py.
+To run this for yourself:
+enter your twitter credentials in the file: TwitterStrings_stream.py.
+Then run the file twitter_project_stream_output.py
 
 
 This project implements the Knuth-Morris-Pratt string search algorithm and applies it to streaming twitter data.
